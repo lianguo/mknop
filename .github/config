@@ -11,6 +11,8 @@ cd lede
     git clone https://github.com/jerrykuku/luci-app-jd-dailybonus
     git clone https://github.com/lisaac/luci-lib-docker
     git clone https://github.com/lisaac/luci-app-dockerman
+
+    sed -i 's/docker-ce/dockerd/' luci-app-dockerman/applications/luci-app-dockerman/Makefile
 )
 
 cat >feeds.conf.default <<-EOF
